@@ -1,0 +1,66 @@
+body{
+    box-sizing: border-box;
+    background-color:moccasin;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.contenedor{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1{
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+h2{
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 1.3rem;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}
+.entrada{
+    margin-bottom: 40px;
+}
+.contenido{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: beige;
+    text-transform: full-width;
+    border-radius: 20px;
+}
+.contenido span{
+    color: darkgoldenrod;
+}
+.boton{
+    background-color: chocolate;
+    color: aliceblue;
+    border-radius: 5px;
+}
+footer{
+    height: 70px;
+    background-color: coral;
+    text-align: center;
+    align-content: center;
+    color:aliceblue
+}
+@media screen and (min-width: 480px){
+    .contenedorprincipal{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .entrada{
+        flex: 0 1 calc(50% - 1rem)
+    }
+}
+@media screen and (min-width: 800px){
+    .entrada{
+        flex: 0 1 calc(33% - 1rem)
+    }
+}
